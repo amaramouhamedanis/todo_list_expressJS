@@ -1,0 +1,13 @@
+<h1> !listes des taches! </h1>
+<div class="list-group">
+  {{#each taches}}
+  <a href="#" class="list-group-item list-group-item-action {{#if @first}}active{{/if}}">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{this}}</h5>
+      <small class="{{#if @first}}text-white{{else}}text-muted{{/if}}">3 days ago</small>
+    </div>
+    <p class="mb-1">Description de la tâche ici...</p>
+    <small class="{{#if @first}}text-white{{else}}text-muted{{/if}}">Détails supplémentaires...</small>
+  </a>
+  {{/each}}
+</div>
