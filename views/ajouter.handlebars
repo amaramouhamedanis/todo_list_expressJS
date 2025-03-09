@@ -1,0 +1,13 @@
+<h1>Ajouter une Tâche</h1>
+
+{{#if error}}
+    <p style="color: red;">{{error}}</p>
+{{/if}}
+
+<form action="/ajouter" method="POST">
+    <input type="text" name="title" placeholder="Nom de la tâche" required>
+    <button type="submit">Ajouter</button>
+</form>
+
+<!-- Lien pour retourner à l'accueil -->
+<a href="/">Retour à l'accueil</a>

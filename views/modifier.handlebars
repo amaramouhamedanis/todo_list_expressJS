@@ -1,0 +1,8 @@
+<h1>Modifier la Tâche</h1>
+
+<form action="/modifier/{{tache.id}}" method="POST">
+    <input type="text" name="title" value="{{tache.title}}" required>
+    <button type="submit">Enregistrer</button>
+</form>
+
+<a href="/">Retour</a>
